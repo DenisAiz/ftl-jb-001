@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad24c70-f283-469a-bb17-e004d73c968f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/L002/POJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/L003/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/L003/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
@@ -33,6 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21lsTb7sEsgzLuo7NWLfKqgsg1g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -128,7 +132,7 @@
       <updated>1638527022684</updated>
       <workItem from="1638527031113" duration="313000" />
       <workItem from="1638704208736" duration="17000" />
-      <workItem from="1638704692660" duration="2022000" />
+      <workItem from="1638704692660" duration="3219000" />
     </task>
     <servers />
   </component>
