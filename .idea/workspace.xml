@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad24c70-f283-469a-bb17-e004d73c968f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/Animals/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Animals/Duck.java" afterDir="false" />
-    </list>
+    <list default="true" id="bad24c70-f283-469a-bb17-e004d73c968f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +130,7 @@
       <workItem from="1638704208736" duration="17000" />
       <workItem from="1638704692660" duration="7504000" />
       <workItem from="1638780320461" duration="104000" />
-      <workItem from="1638780515238" duration="4282000" />
+      <workItem from="1638780515238" duration="4631000" />
     </task>
     <servers />
   </component>
