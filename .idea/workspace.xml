@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad24c70-f283-469a-bb17-e004d73c968f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Animals/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Animals/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Animals/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Animals/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Animals/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Animals/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +102,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -133,7 +133,9 @@
       <updated>1638527022684</updated>
       <workItem from="1638527031113" duration="313000" />
       <workItem from="1638704208736" duration="17000" />
-      <workItem from="1638704692660" duration="6275000" />
+      <workItem from="1638704692660" duration="7504000" />
+      <workItem from="1638780320461" duration="104000" />
+      <workItem from="1638780515238" duration="1653000" />
     </task>
     <servers />
   </component>
