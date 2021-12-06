@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.Animals.Cat;
 import com.company.Animals.Dog;
+import com.company.Animals.Duck;
 import com.company.L001.HelloWorld;
 import com.company.L002.POJO;
 
@@ -28,6 +29,19 @@ public class Main {
         dog.goToStick(5);
         dog.whereTheDog();
 
+        dog.voice();
+
         Dog homeLessDog = Dog.ofHomeLess(10);
+        homeLessDog.voice();
+
+        Duck duck = new Duck();
+
+        duck.voice();
+        duck.takeOff();
+        duck.isTheBirdFlying();
+        duck.lending();
+        duck.isTheBirdFlying();
+
+
     }
 }
