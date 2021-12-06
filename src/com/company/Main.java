@@ -3,11 +3,8 @@ package com.company;
 import com.company.Animals.Cat;
 import com.company.Animals.Dog;
 import com.company.Animals.Duck;
-import com.company.L001.HelloWorld;
-import com.company.L002.POJO;
 import com.company.L013.SwitchExample;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
