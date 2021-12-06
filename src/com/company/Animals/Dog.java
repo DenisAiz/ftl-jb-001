@@ -1,5 +1,8 @@
 package com.company.Animals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Dog extends Animal{
     public Dog(String name, Integer weight) {
         super(name, weight);
@@ -12,13 +15,14 @@ public class Dog extends Animal{
      * Определяем ранизу между текущей позицией и позицией палки.
      */
 
-    public static Dog[] randomArray(){
-        Dog[] dog = new Dog[3];
-        dog[0] = Dog.of("Shram", 10);
-        dog[1] = Dog.of("Sharik", 7);
-        dog[2] = Dog.of("Boris", 22);
+    public static List<Dog> randomArray(){
+        List<Dog> dogs = new ArrayList<>();
 
-        return dog;
+        dogs.add(Dog.of("Shram", 10));
+        dogs.add(Dog.of("Sharik", 7));
+        dogs.add(Dog.of("Boris", 22));
+
+        return dogs;
     }
 
     public void goToStick(Integer stickPosition){
