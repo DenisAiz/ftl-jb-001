@@ -44,6 +44,21 @@ public class Main {
         duck.isTheBirdFlying();
         duck.showSpeed();
 
+        Dog[] dogHomeLess = new Dog[]{
+                Dog.ofHomeLess(5),
+                Dog.ofHomeLess(8),
+                Dog.ofHomeLess(12),
+        };
+        System.out.println(dogHomeLess.length);
+        System.out.println(dogHomeLess[0]);
+        System.out.println(dogHomeLess[1]);
+        System.out.println(dogHomeLess[2]);
+
+        Dog[] dogs = Dog.randomArray();
+
+        System.out.println(dogs[0]);
+        System.out.println(dogs[1]);
+        System.out.println(dogs[2]);
 
     }
 }
