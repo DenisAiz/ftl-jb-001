@@ -34,12 +34,15 @@ public class Main {
         homeLessDog.voice();
 
         Duck duck = new Duck();
-
         duck.voice();
+
         duck.takeOff();
         duck.isTheBirdFlying();
+        duck.showSpeed();
+
         duck.lending();
         duck.isTheBirdFlying();
+        duck.showSpeed();
 
 
     }
