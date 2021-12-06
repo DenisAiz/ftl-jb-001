@@ -5,6 +5,7 @@ import com.company.Animals.Dog;
 import com.company.Animals.Duck;
 import com.company.L001.HelloWorld;
 import com.company.L002.POJO;
+import com.company.L013.SwitchExample;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -76,6 +77,10 @@ public class Main {
         while (indexLinkedList < dogLinkedList.size()){
             System.out.println(dogLinkedList.get(indexLinkedList));
             indexLinkedList++;
+        }
+
+        for (int i = 0; i < 100; i++){
+            SwitchExample.run();
         }
     }
 }
