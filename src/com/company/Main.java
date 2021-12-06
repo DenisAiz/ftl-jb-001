@@ -6,6 +6,10 @@ import com.company.Animals.Duck;
 import com.company.L001.HelloWorld;
 import com.company.L002.POJO;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -44,21 +48,22 @@ public class Main {
         duck.isTheBirdFlying();
         duck.showSpeed();
 
-        Dog[] dogHomeLess = new Dog[]{
+        List<Dog> dogHomeLess = Arrays.asList(new Dog[] {
                 Dog.ofHomeLess(5),
                 Dog.ofHomeLess(8),
                 Dog.ofHomeLess(12),
-        };
-        System.out.println(dogHomeLess.length);
-        System.out.println(dogHomeLess[0]);
-        System.out.println(dogHomeLess[1]);
-        System.out.println(dogHomeLess[2]);
+        });
 
-        Dog[] dogs = Dog.randomArray();
+        System.out.println(dogHomeLess.size());
+        System.out.println(dogHomeLess.get(0));
+        System.out.println(dogHomeLess.get(1));
+        System.out.println(dogHomeLess.get(2));
 
-        System.out.println(dogs[0]);
-        System.out.println(dogs[1]);
-        System.out.println(dogs[2]);
+        List<Dog> dogs = Dog.randomArray();
+
+        System.out.println(dogs.get(0));
+        System.out.println(dogs.get(1));
+        System.out.println(dogs.get(2));
 
     }
 }
