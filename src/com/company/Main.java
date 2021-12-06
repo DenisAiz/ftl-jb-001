@@ -20,6 +20,7 @@ public class Main {
 
         Cat cat = new Cat("Barsik", 20);
         System.out.println(cat.jumpHeight());
+        cat.voice();
 
         Dog dog = new Dog();
         dog.goToStick(14);
@@ -28,8 +29,6 @@ public class Main {
         dog.whereTheDog();
         dog.goToStick(5);
         dog.whereTheDog();
-
-        dog.voice();
 
         Dog homeLessDog = Dog.ofHomeLess(10);
         homeLessDog.voice();
