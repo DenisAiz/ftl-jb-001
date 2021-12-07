@@ -4,6 +4,7 @@ import com.company.Animals.Cat;
 import com.company.Animals.Dog;
 import com.company.Animals.Duck;
 import com.company.Animals.MoveType;
+import com.company.L019.StringExample;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -89,5 +90,7 @@ public class Main {
         if (dog.getMoveType() == MoveType.WALK){
             System.out.println("Может ходить");
         }
+
+        StringExample.run();
     }
 }
