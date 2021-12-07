@@ -5,13 +5,17 @@ import java.util.stream.Stream;
 
 public class StringExample {
 
+    private static String str(){
+        return "Добро пожаловать на FoodTech School";
+    }
+
     private static void runContentEquals(){
 
         System.out.println("runContentEquals");
-        String str1 = "Добро пожаловать на FoodTech School";
+        String str1 = str();
         String str2 = "Сайт для изучения Java";
 
-        StringBuffer str3 = new StringBuffer("Добро пожаловать на FoodTech School");
+        StringBuffer str3 = new StringBuffer(str());
         StringBuffer str4 = new StringBuffer("Добро пожаловать");
 
         boolean result = str1.contentEquals(str3);
@@ -28,10 +32,10 @@ public class StringExample {
         System.out.println("");
         System.out.println("runEqualsIgnoreCase");
 
-        String str1 = "Добро пожаловать на FoodTech School";
+        String str1 = str();
         String str2 = str1;
         String str3 = "Добро пожаловать";
-        String str4 = "ДОБРО пожаловать на FOODTECH School";
+        String str4 = str();
 
         boolean result = str1.equalsIgnoreCase(str2);
         System.out.println("str1 == str2: " + result);
@@ -104,7 +108,7 @@ public class StringExample {
         System.out.println("");
         System.out.println("runMatches");
 
-        String str1 = "Добро пожаловать на FoodTech School";
+        String str1 = str();
 
         System.out.println(str1.matches("(.*)FoodTech(.*)"));
         System.out.println(str1.matches("FoodTech"));
@@ -125,7 +129,7 @@ public class StringExample {
         System.out.println("");
         System.out.println("runRegionMatches");
 
-        String str1 = "Добро пожаловать на FoodTech School",
+        String str1 = str(),
                 str2 = "FoodTech School",
                 str3 = "Java",
                 str4 = "FOODTECH SCHOOL";
@@ -139,7 +143,7 @@ public class StringExample {
         System.out.println("");
         System.out.println("runStartWith");
 
-        String str1 = "Добро пожаловать на FoodTech School",
+        String str1 = str(),
                 str2 = "Добро",
                 str3 = "Java",
                 str4 = "FOODTECH SCHOOL";
@@ -153,7 +157,7 @@ public class StringExample {
         System.out.println("");
         System.out.println("runEndWith");
 
-        String str1 = "Добро пожаловать на FoodTech School",
+        String str1 = str(),
                 str2 = "School",
                 str3 = "Java",
                 str4 = "FOODTECH SCHOOL";
@@ -164,6 +168,9 @@ public class StringExample {
     }
 
     private static void runLines(){
+        System.out.println("");
+        System.out.println("runLines");
+
         String str1 = "sfsdfsd\n" +
                 "sfsdfsd\n" +
                 "sfsdfsd\n" +
@@ -176,6 +183,132 @@ public class StringExample {
         lines.forEach(System.out::println);
 
         System.out.println(lines);
+    }
+
+    private static void runToCharArray(){
+        System.out.println("");
+        System.out.println("runToCharArray");
+
+        String str1 = str();
+
+        System.out.println(str1.toCharArray()[0]);
+    }
+
+    private static void runFormat(){
+        System.out.println("");
+        System.out.println("runFormat");
+
+        float floatVar = 3.6f;
+        int intVar = 44;
+        String stringVar = "String";
+
+        String fs;
+        fs = String.format("Значение float = %.1f,Значение int = %d,Значение string = %s", floatVar, intVar, stringVar);
+
+        System.out.println(fs);
+    }
+
+    private static void runValueOff(){
+        System.out.println("");
+        System.out.println("runValueOff");
+
+        double d = 123.4;
+        boolean b = true;
+        long l = 12347l;
+        char[] chars = {'a', 'z'};
+
+        System.out.println(String.valueOf(d));
+        System.out.println(String.valueOf(b));
+        System.out.println(String.valueOf(l));
+        System.out.println(String.valueOf(chars));
+    }
+
+    private static void runRepeat(){
+        System.out.println("");
+        System.out.println("runRepeat");
+
+        String str1 = "string";
+        String s = str1.repeat(5);
+
+        System.out.println(s);
+    }
+
+    private static void runIndexOff(){
+        System.out.println("");
+        System.out.println("runIndexOff");
+
+        String str1 = str();
+        String sub1 = "Food", sub2 = "Tech";
+
+        System.out.println(str1.indexOf(sub1));
+        System.out.println(str1.indexOf(sub2));
+        System.out.println(str1.indexOf("value"));
+    }
+
+    private static void runLastIndexOff(){
+        System.out.println("");
+        System.out.println("runLastIndexOff");
+
+        String str1 = str();
+        String sub1 = "о";
+
+        System.out.println(str1.lastIndexOf(sub1));
+    }
+
+    private static void runSubString(){
+        System.out.println("");
+        System.out.println("runSubString");
+
+        String str1 = str();
+        System.out.println(str1.substring(11, 20));
+    }
+
+    private static void runSubSequence(){
+        System.out.println("");
+        System.out.println("runSubSequence");
+
+        String str1 = str();
+        System.out.println(str1.subSequence(0, 20));
+    }
+
+    private static void runSplit(){
+        System.out.println("");
+        System.out.println("runSplit");
+
+        String str1 = "Добро-пожаловать-на-сайт";
+        String[] result = str1.split("-");
+        for (String s: str1.split("-")){
+            System.out.println(s);
+        }
+        return;
+    }
+
+    private static void runJoin(){
+        System.out.println("");
+        System.out.println("runJoin");
+
+        String join = String.join(",", "1", "2", "3");
+        System.out.println(join);
+    }
+
+    private static void runTrim(){
+        System.out.println("");
+        System.out.println("runTrim");
+
+        String str1 = "        String";
+        System.out.println(str1);
+        System.out.println(str1.trim());
+    }
+
+    private static void runReplace(){
+        System.out.println("");
+        System.out.println("runReplace");
+
+        String str1 = str();
+        System.out.println(str1);
+        System.out.println(str1.replace("о", "-"));
+        System.out.println(str1.replaceFirst("о", "-"));
+        System.out.println(str1.replaceAll("о", "-"));
     }
 
     public static void run(){
@@ -192,5 +325,17 @@ public class StringExample {
         runStartWith();
         runEndWith();
         runLines();
+        runToCharArray();
+        runFormat();
+        runValueOff();
+        runRepeat();
+        runIndexOff();
+        runLastIndexOff();
+        runSubString();
+        runSubSequence();
+        runSplit();
+        runJoin();
+        runTrim();
+        runReplace();
     }
 }
