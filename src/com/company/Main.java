@@ -3,11 +3,11 @@ package com.company;
 import com.company.Animals.Cat;
 import com.company.Animals.Dog;
 import com.company.Animals.Duck;
-import com.company.L013.SwitchExample;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
 
@@ -61,6 +61,8 @@ public class Main {
         System.out.println(dogHomeLess.size());
         for (Dog dogItem : dogHomeLess){
             System.out.println(dogItem);
+            dogItem.setName(String.valueOf(new Random().nextLong()));
+            System.out.println(dogItem.getName());
         }
 
         List<Dog> dogLinkedList = new LinkedList<>();
@@ -77,7 +79,7 @@ public class Main {
         }
 
         for (int i = 0; i < 100; i++){
-            SwitchExample.run();
+            //SwitchExample.run();
         }
     }
 }
