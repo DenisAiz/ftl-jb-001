@@ -3,6 +3,7 @@ package com.company;
 import com.company.Animals.*;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
+import com.company.L026.FileExample;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -11,7 +12,7 @@ import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
 //        HelloWorld.run();
 //        POJO.run();
 //
@@ -96,5 +97,7 @@ public class Main {
             dog.getWeight().setValue(-10);
         }catch (Animal.WeightException ignore){
         }
+
+        FileExample.run();
     }
 }
