@@ -18,10 +18,13 @@ public class Dog extends Animal{
 
     public static List<Dog> randomArray(){
         List<Dog> dogs = new ArrayList<>();
-
-        dogs.add(Dog.of("Shram", new AnimalWeight(10, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("Sharik", new AnimalWeight(7, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("Boris", new AnimalWeight(22, AnimalWeight.WeightType.KG)));
+        try {
+            dogs.add(Dog.of("Shram", new AnimalWeight(10, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("Sharik", new AnimalWeight(7, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("Boris", new AnimalWeight(22, AnimalWeight.WeightType.KG)));
+        }catch (WeightException e){
+            e.printStackTrace();
+        }
 
         return dogs;
     }
