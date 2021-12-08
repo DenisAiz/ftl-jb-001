@@ -5,6 +5,7 @@ import com.company.Animals.Dog;
 import com.company.Animals.Duck;
 import com.company.Animals.MoveType;
 import com.company.L019.StringExample;
+import com.company.L020.TypeConversion;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -91,6 +92,6 @@ public class Main {
             System.out.println("Может ходить");
         }
 
-        StringExample.run();
+        TypeConversion.run();
     }
 }
