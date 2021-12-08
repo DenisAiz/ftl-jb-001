@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 //        HelloWorld.run();
 //        POJO.run();
 //
@@ -90,5 +90,11 @@ public class Main {
         }
 
         TypeConversion.run();
+
+        dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.KG));
+        try {
+            dog.getWeight().setValue(-10);
+        }catch (Animal.WeightException ignore){
+        }
     }
 }
