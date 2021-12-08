@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dog extends Animal{
-    public Dog(String name, Integer weight) {
+    public Dog(String name, AnimalWeight weight) {
         super(name, weight, MoveType.WALK);
     }
 
@@ -19,9 +19,9 @@ public class Dog extends Animal{
     public static List<Dog> randomArray(){
         List<Dog> dogs = new ArrayList<>();
 
-        dogs.add(Dog.of("Shram", 10));
-        dogs.add(Dog.of("Sharik", 7));
-        dogs.add(Dog.of("Boris", 22));
+        dogs.add(Dog.of("Shram", new AnimalWeight(10, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Sharik", new AnimalWeight(7, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Boris", new AnimalWeight(22, AnimalWeight.WeightType.KG)));
 
         return dogs;
     }
@@ -36,11 +36,11 @@ public class Dog extends Animal{
         System.out.println(this.currentPosition);
     }
 
-    public static Dog of(String name, Integer weight){
+    public static Dog of(String name, AnimalWeight weight){
         return new Dog(name, weight);
     }
 
-    public static Dog ofHomeLess(Integer weight){
+    public static Dog ofHomeLess(AnimalWeight weight){
         Dog dog = new Dog();
         dog.weight = weight;
         return dog;
