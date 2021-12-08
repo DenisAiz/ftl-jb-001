@@ -4,6 +4,7 @@ import com.company.Animals.*;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
+import com.company.L027.ThreadExample;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -99,5 +100,6 @@ public class Main {
         }
 
         FileExample.run();
+        ThreadExample.run();
     }
 }
