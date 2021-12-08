@@ -5,6 +5,7 @@ import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
+import com.company.L028.House;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -101,5 +102,18 @@ public class Main {
 
         FileExample.run();
         ThreadExample.run();
+
+        House house = new House.Builder()
+                .otpHasSwimmingPool(true)
+                .build();
+        System.out.println(house.toString());
+
+        House house1 = new House.Builder()
+                .otpHasFancyStatues(true)
+                .otpHasGarage(true)
+                .otpHasGarden(true)
+                .otpHasSwimmingPool(true)
+                .build();
+        System.out.println(house1.toString());
     }
 }
