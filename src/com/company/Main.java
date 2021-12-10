@@ -6,6 +6,7 @@ import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
 import com.company.L028.House;
+import com.company.Tasks.Task001.Numbers;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -115,5 +116,7 @@ public class Main {
                 .otpHasSwimmingPool(true)
                 .build();
         System.out.println(house1.toString());
+
+        Numbers.run();
     }
 }
