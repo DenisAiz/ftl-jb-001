@@ -9,6 +9,7 @@ import com.company.L028.House;
 import com.company.Tasks.Task001.Numbers;
 import com.company.Tasks.Task002.Num;
 import com.company.Tasks.Task003.MultiplicationTable;
+import com.company.Tasks.Task004.SumOfAllNumbers;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -122,5 +123,6 @@ public class Main {
         Numbers.run();
         Num.run();
         MultiplicationTable.run();
+        SumOfAllNumbers.run();
     }
 }
