@@ -7,6 +7,7 @@ import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
 import com.company.L028.House;
 import com.company.Tasks.Task001.Numbers;
+import com.company.Tasks.Task002.Num;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -118,5 +119,6 @@ public class Main {
         System.out.println(house1.toString());
 
         Numbers.run();
+        Num.run();
     }
 }
